@@ -10,7 +10,7 @@ class App_macros extends Component {
   render () {
     return (
       <div>
-        <h1>Me fala teus macros filho!</h1>
+        <h1>Me fala teus macros!</h1>
         <Input_grams key="protein_input" input_name="Proteína"/>
         <Input_grams key="fat_input" input_name="Gordura"/>
         <Input_grams key="carb_input" input_name="Carboidratos"/>
