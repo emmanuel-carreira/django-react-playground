@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'leads.apps.LeadsConfig',
     'rest_framework',
+    'frontend',
 ]
 
 MIDDLEWARE = [
