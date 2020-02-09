@@ -17,6 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development ./src/index.js --output ./static/frontend/main.js",
+    "dev_macros": "webpack --mode development ./src/macros/index.js --output ./static/macros/main.js",
     "build": "webpack --mode production ./src/index.js --output ./static/frontend/main.js"
   },
   "keywords": [],
