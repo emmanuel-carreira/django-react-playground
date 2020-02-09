@@ -5,6 +5,7 @@
 pycache
 db.sqlite3
 media
+migrations/
 
 # Backup files # 
 *.bak 
@@ -117,3 +118,4 @@ GitHub.sublime-settings
 
 # Node
 node_modules/
+main.js
