@@ -6,6 +6,8 @@ import Submit from "./Submit"
 class App_macros extends Component {
   constructor(props) {
     super(props);
+
+    this.send = this.send.bind(this)
   }
 
   send(event){
