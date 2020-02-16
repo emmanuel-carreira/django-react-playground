@@ -12,7 +12,9 @@ class Input_grams extends Component {
   }
 
   handleChange (event) {
-    this.setState({value: event.target.value});
+    let new_value = event.target.value
+    this.setState({value: new_value});
+    this.props.func(this.props.input_key, new_value);
   }
 
   render() {
@@ -24,8 +26,7 @@ class Input_grams extends Component {
           placeholder="Quantidade em gramas"
           value={this.state.value}
           onChange={this.handleChange}
-        >
-        </input>
+        />
       </div>
     );
   }
