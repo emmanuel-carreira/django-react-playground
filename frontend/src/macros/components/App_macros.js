@@ -21,7 +21,29 @@ class App_macros extends Component {
     this.setState({[key]: value});
   }
 
-  send (event) {
+  send () {
+
+    let postData = {
+      proteins: this.state.proteins,
+      fats: this.state.fats,
+      carbohydrates: this.state.carbohydrates,
+    }
+
+    fetch('/macros/calculate_calories', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(postData)
+    })
+    .then(response => {
+      if (response.status === 200) {
+        let data = response.json()
+        // Do something with calories calculated
+      }
+    })
+  
   }
 
   render () {
