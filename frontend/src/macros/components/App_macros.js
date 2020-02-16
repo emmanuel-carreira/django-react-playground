@@ -21,17 +21,31 @@ class App_macros extends Component {
     this.setState({[key]: value});
   }
 
-  send(event){
-    // Makes some ajax request here. WIP.
+  send (event) {
   }
 
   render () {
     return (
       <div>
         <h1>Me fala teus macros!</h1>
-        <Input_grams key="protein_input" input_name="Proteína" func={this.setValue} input_key='proteins'/>
-        <Input_grams key="fat_input" input_name="Gordura" func={this.setValue} input_key='fats'/>
-        <Input_grams key="carb_input" input_name="Carboidratos" func={this.setValue} input_key='carbohydrates'/>
+        <Input_grams
+          key="protein_input"
+          input_name="Proteína"
+          func={this.setValue}
+          input_key='proteins'
+        />
+        <Input_grams
+          key="fat_input"
+          input_name="Gordura"
+          func={this.setValue}
+          input_key='fats'
+        />
+        <Input_grams
+          key="carb_input"
+          input_name="Carboidratos"
+          func={this.setValue}
+          input_key='carbohydrates'
+        />
         <Submit key="submit_button" name="macros" func={this.send}/>
       </div>
     );
